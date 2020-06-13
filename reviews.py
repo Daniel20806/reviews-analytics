@@ -15,3 +15,10 @@ for d in data:
 	sum_len += len(d)
 average = (sum_len/len(data))
 print('平均有', average, '個字元')
+
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d.strip())
+print('一共有', len(new), '筆留言 < 100 個字元')
